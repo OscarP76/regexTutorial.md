@@ -1,4 +1,4 @@
-# Title (replace with your title)
+# Week 17 Regex Tutorial
 
 This is a Regex tutorial. The goal of this is to help users understand character syntax when reading regex lines.
 
