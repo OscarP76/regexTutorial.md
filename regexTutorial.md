@@ -45,10 +45,6 @@ Characters set within (`[]`) represent a range of characters that will try to be
 ### Character Classes
 Specific characters from sets are called character classes. There are myriad character classes that are ready made. Examples: `\w` and `\d`. You can also make your own. <br/>
 
-### The OR Operator
-
-### Flags
-
 ### Character Escapes
 The backslash character ('\') in Regex allows any characters that precede it to be read as a literal character. The backslash however loses it's functionality when it's inside of a bracket expression.
 <br/>
