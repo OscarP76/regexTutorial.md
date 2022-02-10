@@ -58,9 +58,16 @@ The backslash character ('\') in Regex allows any characters that precede it to 
 <br/>
 <br/>
 
-**`(`** - opening of second grouping “[\da-z\.-]+”
+#### **First piece of URL**  
 
-**`[`** - opening of character set “\da-z\.-“
+URL: ***https://*** www .test. com/ about-us/ our-team   
+Synax: `(https?:\/\/)?`
+
+<br/>
+
+**`(`** - begin section “[\da-z\.-]+”
+
+**`[`** - begin character set “\da-z\.-“
 
 **`\d`** - matches any digit (0-9)
 
@@ -68,11 +75,11 @@ The backslash character ('\') in Regex allows any characters that precede it to 
 
 **`\.-`** - escape character followed by matches of characters “.” and “-“
 
-**`]`** - closing of character set
+**`]`** - closing 
 
-**`+`** - indicates one or more occurrences of the preceding element. 
+**`+`** - denotes one or more instances of the preceding element. 
 
-**`)`** - closing of second grouping
+**`)`** - end of section
 
 **`\.`** - escape character followed by a character match “.” 
 
