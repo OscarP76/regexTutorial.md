@@ -104,6 +104,67 @@ Syntax: `([\da-z\.-]+)\.`
 
 <br />
 
+#### **Third part of url**   
+URL: https:// www .test. ***com/*** about-us/   
+Syntax: `([a-z\.]{2,6})`  
+
+**`(`** - opening of third grouping “[a-z\.]{2,6}”
+
+**`[`** - opening of character set “a-z\.”
+
+**`a-z`** - matches a character in the range of “a” to “z”. Case Sensitive
+
+**`\.`** - escape character followed by a match of the “.” Character
+
+**`]`** - closing of character set
+
+**`{2,6}`** - Quantifier. Matches between 2 and 6 characters of the preceding tokens.
+
+**`)`** - closing of third grouping
+
+<br/>
+
+#### **Fourth part  of URL**  
+URL: https:// www .test. com/ ***about-us/***  
+Syntax: `([\/\w \.-]*)`  
+
+**`(`** - opening of third grouping “[\/\w \.-]*”
+
+**`[`** - opening of “\/\w \.-“
+
+**`\/`** - escape character followed by matches for the “/“ character
+
+**`\w`** - matches any word character (alphanumeric & underscore)
+
+**`\.-`** - escape character “\” to match a “.” and “-“ characters
+
+**`]`** - closing of character set
+
+**`*`** - match 0 or more of the preceding token
+
+**`)`** - closing of fourth grouping
+
+<br/>
+
+#### **Fifth part  of URL**  
+Syntax: `*\/?$/`  
+
+**`*`**- matches 0 or more of the preceding tokens
+
+**`\/`** - escape character “\” to match a “/“ character
+
+**`?`** - previous token is optional
+
+**`$`** - end of line or string
+
+<br/>
+
+#### **Ending of line**  
+**`$/`** - end of line characters.  `^` signifies the line ends, `/` is the line wrapper that closed the line.
+
+<br/>
+<br/>
+
 
 
 
