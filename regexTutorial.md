@@ -53,29 +53,41 @@ Specific characters from sets are called character classes. There are myriad cha
 The backslash character ('\') in Regex allows any characters that precede it to be read as a literal character. The backslash however loses it's functionality when it's inside of a bracket expression.
 <br/>
 
-### **Example Walkthrough**
+### Example Walkthrough
 <br/>
 How to match a URL: `/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/`
 <br/>
-### **To begin a line**
-**`/`^** - is how to start the line
+To begin a line
 <br/>
-**`/`** is what wraps the line
+`/`^ - is how to start the line
 <br/>
-### **Beginning of URL**
-URL: ***https://*** www .test. com/ about-us/ our-team   
+`/` is what wraps the line
+<br/>
+## Beginning of URL
+<br/>
+URL: https:// www .test. com/ about-us/ our-team
+<br/>
 Syntax: `(https?:\/\/)?`
 <br/>
-**`(`** - beginning of first section “https://“
-**`https`** - literal string ‘https’
-**`?`** - previous character “s” is options
-**`:`** - literal character
-**`\/`** - escape character preceded by literal character “/“
-**`)`** - end of first section “https://“
-**`?`** - previous section is not required
+`(` - beginning of first section “https://“
+<br/>
+`https` - literal string ‘https’
+<br/>
+`?` - previous character “s” is options
+<br/>
+`:` - literal character
+<br/>
+`\/` - escape character preceded by literal character “/“
+<br/>
+`)` - end of first section “https://“
+<br/>
+`?` - previous section is not required
 <br />
-#### **Second piece of URL**
-URL: https:// ***www .test.*** com/ about-us/ our-team  
+## Second piece of URL
+<br/>
+<br/>
+URL: https:// www .test. com/ about-us/ our-team
+<br/>
 Syntax: `([\da-z\.-]+)\.`
 
 
