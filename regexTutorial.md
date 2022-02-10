@@ -178,4 +178,6 @@ Syntax: `*\/?$/`
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+I am Oscar Plumridge. I am a Aerospace quality inspector and Full stack developer student. 
+<br/>
+Please see my [Github] (https://github.com/OscarP76) to browse more of my work
