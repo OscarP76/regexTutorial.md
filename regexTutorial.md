@@ -55,16 +55,28 @@ The backslash character ('\') in Regex allows any characters that precede it to 
 
 ### **Example Walkthrough**
 <br/>
-
 How to match a URL: `/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/`
-
 <br/>
-
 #### **To begin a line**
 **`/`^** is how to start the line
 <br/>
 **`/`** is what wraps the line
 <br/>
+#### **Beginning of URL**
+URL: ***https://*** www .test. com/ about-us/ our-team   
+Syntax: `(https?:\/\/)?`
+<br/>
+**`(`** - beginning of first section “https://“
+**`https`** - literal string ‘https’
+**`?`** - previous character “s” is options
+**`:`** - literal character
+**`\/`** - escape character preceded by literal character “/“
+**`)`** - end of first section “https://“
+**`?`** - previous section is not required
+<br />
+#### **Second piece of URL**
+URL: https:// ***www .test.*** com/ about-us/ our-team  
+Syntax: `([\da-z\.-]+)\.`
 
 
 
