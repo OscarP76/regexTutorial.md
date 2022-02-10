@@ -105,17 +105,17 @@ Syntax: `([\da-z\.-]+)\.`
 
 `+` - indicates one or more occurrences of the preceding element. 
 
-`)` - closing of second grouping
+`)` - end of second section
 
 **`\.` - escape character followed by a character match “.” 
 
 <br />
 
-#### **Third part of url**   
+#### **Third piece of url**   
 URL: https:// www .test. ***com/*** about-us/   
 Syntax: `([a-z\.]{2,6})`  
 
-**`(`** - opening of third grouping “[a-z\.]{2,6}”
+**`(`** - begin third section “[a-z\.]{2,6}”
 
 **`[`** - opening of character set “a-z\.”
 
@@ -127,15 +127,15 @@ Syntax: `([a-z\.]{2,6})`
 
 **`{2,6}`** - Quantifier. Matches between 2 and 6 characters of the preceding tokens.
 
-**`)`** - closing of third grouping
+**`)`** - end of third section
 
 <br/>
 
-#### **Fourth part  of URL**  
+#### **Fourth piece of URL**  
 URL: https:// www .test. com/ ***about-us/***  
 Syntax: `([\/\w \.-]*)`  
 
-**`(`** - opening of third grouping “[\/\w \.-]*”
+**`(`** - begin fourth piece “[\/\w \.-]*”
 
 **`[`** - opening of “\/\w \.-“
 
@@ -149,11 +149,11 @@ Syntax: `([\/\w \.-]*)`
 
 **`*`** - match 0 or more of the preceding token
 
-**`)`** - closing of fourth grouping
+**`)`** - end of fourth piece
 
 <br/>
 
-#### **Fifth part  of URL**  
+#### **Fifth piece of URL**  
 Syntax: `*\/?$/`  
 
 **`*`**- matches 0 or more of the preceding tokens
