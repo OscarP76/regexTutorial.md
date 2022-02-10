@@ -50,6 +50,25 @@ Specific characters from sets are called character classes. There are myriad cha
 ### Flags
 
 ### Character Escapes
+The backslash character ('\') in Regex allows any characters that precede it to be read as a literal character. The backslash however loses it's functionality when it's inside of a bracket expression.
+<br/>
+
+### **Example Walkthrough**
+<br/>
+
+How to match a URL: `/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/`
+
+<br/>
+
+#### **To begin a line**
+**`/`^** is how to start the line
+<br/>
+**`/`** is what wraps the line
+<br/>
+
+
+
+
 
 ## Author
 
