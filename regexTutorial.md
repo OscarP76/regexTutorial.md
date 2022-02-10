@@ -78,7 +78,9 @@ Synax: `(https?:\/\/)?`
 **`\.`** - escape character followed by a character match “.” 
 
 <br />
+
 #### **Second piece of URL**
+
 <br/>
 <br/>
 URL: https:// www .test. com/ about-us/ our-team
